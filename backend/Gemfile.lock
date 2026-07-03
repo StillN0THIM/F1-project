@@ -104,6 +104,10 @@ GEM
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
+    feedjira (4.0.2)
+      logger (>= 1.0, < 2)
+      loofah (>= 2.3.1, < 3)
+      sax-machine (>= 1.0, < 2)
     ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-aarch64-linux-musl)
     ffi (1.17.4-arm-linux-gnu)
@@ -297,6 +301,7 @@ GEM
     ruby-vips (2.3.0)
       ffi (~> 1.12)
       logger
+    sax-machine (1.3.2)
     securerandom (0.4.1)
     solid_cable (4.0.0)
       actioncable (>= 7.2)
@@ -366,6 +371,7 @@ DEPENDENCIES
   brakeman
   bundler-audit
   debug
+  feedjira
   httparty
   image_processing (~> 1.2)
   kamal

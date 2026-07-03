@@ -2,8 +2,8 @@ class Api::V1::StandingsController < ApplicationController
     BASE_URL = Rails.application.config.x.jolpica_base_url
 
     def index
-    drivers      = HTTParty.get("#{BASE_URL}/2025/driverStandings.json")
-    constructors = HTTParty.get("#{BASE_URL}/2025/constructorStandings.json")
+    drivers      = HTTParty.get("#{BASE_URL}/2026/driverStandings.json")
+    constructors = HTTParty.get("#{BASE_URL}/2026/constructorStandings.json")
     # Fetches both driver and constructor standings in parallel requests
 
     render json: {
