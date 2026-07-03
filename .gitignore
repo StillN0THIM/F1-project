@@ -1,0 +1,39 @@
+# ── Ruby / Rails ──────────────────────────────────────────────
+backend/log/*
+backend/tmp/*
+backend/storage/*
+backend/.env
+backend/config/master.key
+backend/config/credentials/*.key
+backend/public/assets
+backend/public/packs
+backend/.bundle
+backend/vendor/bundle
+
+# Keep these folders but ignore their contents
+!backend/log/.keep
+!backend/tmp/.keep
+!backend/storage/.keep
+
+# ── React / Node ───────────────────────────────────────────────
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ── OS files ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor files ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
