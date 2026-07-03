@@ -28,5 +28,10 @@ module Backend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.x.jolpica_base_url = "https://api.jolpi.ca/ergast/f1"
+    # Stores the base URL as an app-wide config value
+    # accessible anywhere via Rails.application.config.x.jolpica_base_url
+
   end
 end
