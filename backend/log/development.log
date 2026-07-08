@@ -402,3 +402,910 @@ Completed 200 OK in 4140ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cac
 Completed 200 OK in 4149ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 37.5ms)
 
 
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-08 23:29:19 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-08 23:29:19 +0000
+Processing by Api::V1::NewsController#index as HTML
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1891ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.2ms)
+
+
+Completed 200 OK in 1900ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.3ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:31:02 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:31:02 +0000
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found\n  \e[2m 3 | \e[m\n  \e[2m 4 | \e[m    def index\n\e[1;31m> \e[m\e[2m 5 | \e[m... \"\#{BASE_URL}/2026/\#{params[:id] ...\n  \e[2m   | \e[m    \e[1;31m^\e[m unterminated string; expected a closing delimiter for the interpolated string\n  \e[2m 6 | \e[m        render json: response.parsed_response\n  \e[2m 7 | \e[m    end\n  \e[2m 8 | \e[m\n  \e[2m 9 | \e[mend\n\e[1;31m> \e[m\e[2m10 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `def` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input; expected a `)` to close the arguments\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found
+  [2m 3 | [m
+  [2m 4 | [m    def index
+[1;31m> [m[2m 5 | [m... "#{BASE_URL}/2026/#{params[:id] ...
+  [2m   | [m    [1;31m^[m unterminated string; expected a closing delimiter for the interpolated string
+  [2m 6 | [m        render json: response.parsed_response
+  [2m 7 | [m    end
+  [2m 8 | [m
+  [2m 9 | [mend
+[1;31m> [m[2m10 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+
+  [2m   | [m[1;31m^[m expected an `end` to close the `def` statement
+
+  [2m   | [m[1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+
+  [2m   | [m[1;31m^[m unexpected end-of-input; expected a `)` to close the arguments
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found\n  \e[2m 3 | \e[m\n  \e[2m 4 | \e[m    def index\n\e[1;31m> \e[m\e[2m 5 | \e[m... \"\#{BASE_URL}/2026/\#{params[:id] ...\n  \e[2m   | \e[m    \e[1;31m^\e[m unterminated string; expected a closing delimiter for the interpolated string\n  \e[2m 6 | \e[m        render json: response.parsed_response\n  \e[2m 7 | \e[m    end\n  \e[2m 8 | \e[m\n  \e[2m 9 | \e[mend\n\e[1;31m> \e[m\e[2m10 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `def` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input; expected a `)` to close the arguments\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found
+  [2m 3 | [m
+  [2m 4 | [m    def index
+[1;31m> [m[2m 5 | [m... "#{BASE_URL}/2026/#{params[:id] ...
+  [2m   | [m    [1;31m^[m unterminated string; expected a closing delimiter for the interpolated string
+  [2m 6 | [m        render json: response.parsed_response
+  [2m 7 | [m    end
+  [2m 8 | [m
+  [2m 9 | [mend
+[1;31m> [m[2m10 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+
+  [2m   | [m[1;31m^[m expected an `end` to close the `def` statement
+
+  [2m   | [m[1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+
+  [2m   | [m[1;31m^[m unexpected end-of-input; expected a `)` to close the arguments
+):
+  
+app/controllers/api/v1/races_controller.rb:5: syntax errors found
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found\n  \e[2m 3 | \e[m\n  \e[2m 4 | \e[m    def index\n\e[1;31m> \e[m\e[2m 5 | \e[m... \"\#{BASE_URL}/2026/\#{params[:id] ...\n  \e[2m   | \e[m    \e[1;31m^\e[m unterminated string; expected a closing delimiter for the interpolated string\n  \e[2m 6 | \e[m        render json: response.parsed_response\n  \e[2m 7 | \e[m    end\n  \e[2m 8 | \e[m\n  \e[2m 9 | \e[mend\n\e[1;31m> \e[m\e[2m10 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `def` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input; expected a `)` to close the arguments\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found
+  [2m 3 | [m
+  [2m 4 | [m    def index
+[1;31m> [m[2m 5 | [m... "#{BASE_URL}/2026/#{params[:id] ...
+  [2m   | [m    [1;31m^[m unterminated string; expected a closing delimiter for the interpolated string
+  [2m 6 | [m        render json: response.parsed_response
+  [2m 7 | [m    end
+  [2m 8 | [m
+  [2m 9 | [mend
+[1;31m> [m[2m10 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+
+  [2m   | [m[1;31m^[m expected an `end` to close the `def` statement
+
+  [2m   | [m[1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+
+  [2m   | [m[1;31m^[m unexpected end-of-input; expected a `)` to close the arguments
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found\n  \e[2m 3 | \e[m\n  \e[2m 4 | \e[m    def index\n\e[1;31m> \e[m\e[2m 5 | \e[m... \"\#{BASE_URL}/2026/\#{params[:id] ...\n  \e[2m   | \e[m    \e[1;31m^\e[m unterminated string; expected a closing delimiter for the interpolated string\n  \e[2m 6 | \e[m        render json: response.parsed_response\n  \e[2m 7 | \e[m    end\n  \e[2m 8 | \e[m\n  \e[2m 9 | \e[mend\n\e[1;31m> \e[m\e[2m10 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `def` statement\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\n  \e[2m   | \e[m\e[1;31m^\e[m unexpected end-of-input; expected a `)` to close the arguments\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:5: syntax errors found
+  [2m 3 | [m
+  [2m 4 | [m    def index
+[1;31m> [m[2m 5 | [m... "#{BASE_URL}/2026/#{params[:id] ...
+  [2m   | [m    [1;31m^[m unterminated string; expected a closing delimiter for the interpolated string
+  [2m 6 | [m        render json: response.parsed_response
+  [2m 7 | [m    end
+  [2m 8 | [m
+  [2m 9 | [mend
+[1;31m> [m[2m10 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+
+  [2m   | [m[1;31m^[m expected an `end` to close the `def` statement
+
+  [2m   | [m[1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+
+  [2m   | [m[1;31m^[m unexpected end-of-input; expected a `)` to close the arguments
+):
+  
+app/controllers/api/v1/races_controller.rb:5: syntax errors found
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:32:37 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:32:37 +0000
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+):
+  
+app/controllers/api/v1/races_controller.rb:13: syntax error found
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+):
+  
+app/controllers/api/v1/races_controller.rb:13: syntax error found
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:32:45 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:32:45 +0000
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+):
+  
+app/controllers/api/v1/races_controller.rb:13: syntax error found
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found\n  \e[2m11 | \e[m    end\n  \e[2m12 | \e[m\n\e[1;31m> \e[m\e[2m13 | \e[mend\n  \e[2m   | \e[m\e[1;31m^~~\e[m unexpected 'end', ignoring it\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:13: syntax error found
+  [2m11 | [m    end
+  [2m12 | [m
+[1;31m> [m[2m13 | [mend
+  [2m   | [m[1;31m^~~[m unexpected 'end', ignoring it
+):
+  
+app/controllers/api/v1/races_controller.rb:13: syntax error found
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:33:30 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:33:30 +0000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:35:46 +0000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:35:53 +0000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:36:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:36:54 +0000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:37:02 +0000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::RacesController):
+  
+actionpack (8.1.3) lib/abstract_controller/base.rb:149:in 'AbstractController::Base#process'
+actionpack (8.1.3) lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+actionpack (8.1.3) lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:65:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:35:in 'block in ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:86:in 'block in ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'Array#each'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:66:in 'ActionDispatch::Journey::Router#recognize'
+actionpack (8.1.3) lib/action_dispatch/journey/router.rb:31:in 'ActionDispatch::Journey::Router#serve'
+actionpack (8.1.3) lib/action_dispatch/routing/route_set.rb:906:in 'ActionDispatch::Routing::RouteSet#call'
+railties (8.1.3) lib/rails/engine/lazy_route_set.rb:60:in 'Rails::Engine::LazyRouteSet#call'
+rack (3.2.6) lib/rack/etag.rb:29:in 'Rack::ETag#call'
+rack (3.2.6) lib/rack/conditional_get.rb:31:in 'Rack::ConditionalGet#call'
+rack (3.2.6) lib/rack/head.rb:15:in 'Rack::Head#call'
+activerecord (8.1.3) lib/active_record/migration.rb:671:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.3) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.3) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:39:37 +0000
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found\n  \e[2m13 | \e[m        response = HTT{arty.get(\"\#{BASE_URL}/2025/\#{params[:id]}/races/1\")}\n  \e[2m14 | \e[m        render json: response.parsed_response\n\e[1;31m> \e[m\e[2m15 | \e[mend\n  \e[2m   | \e[m   \e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\e[1;31m> \e[m\e[2m16 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found
+  [2m13 | [m        response = HTT{arty.get("#{BASE_URL}/2025/#{params[:id]}/races/1")}
+  [2m14 | [m        render json: response.parsed_response
+[1;31m> [m[2m15 | [mend
+  [2m   | [m   [1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+[1;31m> [m[2m16 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found\n  \e[2m13 | \e[m        response = HTT{arty.get(\"\#{BASE_URL}/2025/\#{params[:id]}/races/1\")}\n  \e[2m14 | \e[m        render json: response.parsed_response\n\e[1;31m> \e[m\e[2m15 | \e[mend\n  \e[2m   | \e[m   \e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\e[1;31m> \e[m\e[2m16 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found
+  [2m13 | [m        response = HTT{arty.get("#{BASE_URL}/2025/#{params[:id]}/races/1")}
+  [2m14 | [m        render json: response.parsed_response
+[1;31m> [m[2m15 | [mend
+  [2m   | [m   [1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+[1;31m> [m[2m16 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+):
+  
+app/controllers/api/v1/races_controller.rb:15: syntax errors found
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:40:08 +0000
+  
+ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found\n  \e[2m13 | \e[m        response = HTTparty.get(\"\#{BASE_URL}/2025/\#{params[:id]}/races/1\")\n  \e[2m14 | \e[m        render json: response.parsed_response\n\e[1;31m> \e[m\e[2m15 | \e[mend\n  \e[2m   | \e[m   \e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\e[1;31m> \e[m\e[2m16 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n">)
+Caused by: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found
+  [2m13 | [m        response = HTTparty.get("#{BASE_URL}/2025/#{params[:id]}/races/1")
+  [2m14 | [m        render json: response.parsed_response
+[1;31m> [m[2m15 | [mend
+  [2m   | [m   [1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+[1;31m> [m[2m16 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+)
+
+Information for: ArgumentError (Reported error must be an Exception, got: #<SyntaxError:"/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found\n  \e[2m13 | \e[m        response = HTTparty.get(\"\#{BASE_URL}/2025/\#{params[:id]}/races/1\")\n  \e[2m14 | \e[m        render json: response.parsed_response\n\e[1;31m> \e[m\e[2m15 | \e[mend\n  \e[2m   | \e[m   \e[1;31m^\e[m unexpected end-of-input, assuming it is closing the parent top level context\n\e[1;31m> \e[m\e[2m16 | \e[m\n  \e[2m   | \e[m\e[1;31m^\e[m expected an `end` to close the `class` statement\n">):
+  
+activesupport (8.1.3) lib/active_support/error_reporter.rb:235:in 'ActiveSupport::ErrorReporter#report'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:36:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.3) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.3) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.6) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.3) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.6) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.3) lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in 'Rack::Cors#call'
+railties (8.1.3) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+
+Information for cause: SyntaxError (/home/himanshu/projects/F1-project/backend/app/controllers/api/v1/races_controller.rb:15: syntax errors found
+  [2m13 | [m        response = HTTparty.get("#{BASE_URL}/2025/#{params[:id]}/races/1")
+  [2m14 | [m        render json: response.parsed_response
+[1;31m> [m[2m15 | [mend
+  [2m   | [m   [1;31m^[m unexpected end-of-input, assuming it is closing the parent top level context
+[1;31m> [m[2m16 | [m
+  [2m   | [m[1;31m^[m expected an `end` to close the `class` statement
+):
+  
+app/controllers/api/v1/races_controller.rb:15: syntax errors found
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:40:26 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::RacesController::HTTparty):
+  
+app/controllers/api/v1/races_controller.rb:13:in 'Api::V1::RacesController#show'
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:40:35 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 3251ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:40:38 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:42:17 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 2841ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:42:20 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:43:16 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1067ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:43:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races" for 127.0.0.1 at 2026-07-08 23:43:31 +0000
+Processing by Api::V1::RacesController#index as HTML
+Completed 200 OK in 1360ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:43:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:43:46 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 987ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:43:47 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:44:39 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1723ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:44:40 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:44:47 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1222ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:44:48 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:44:52 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1129ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:44:53 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:45:12 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 780ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2026-07-08 23:45:13 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:46:10 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-08 23:46:10 +0000
+Processing by Api::V1::RacesController#show as HTML
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1340ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Completed 200 OK in 1340ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+

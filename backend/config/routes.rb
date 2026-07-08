@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   namespace :api do
     namespace :v1 do
-      resources :races,     only: [:index, :show]
+      resources :races, only: [:index, :show]
       resources :standings, only: [:index]
       resources :calendar,  only: [:index]
       resources :news,      only: [:index]
