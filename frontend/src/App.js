@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Pages — we'll create these files next
+import Home from "./pages/Home";
+import Standings from "./pages/Standings";
+import Calendar from "./pages/Calendar";
+import News from "./pages/News";
+import Race from "./pages/Race";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/standings" element={<Standings />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/races/:id" element={<Race />} />
+        {/* :id means this route accepts a dynamic value e.g. /races/1 */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
