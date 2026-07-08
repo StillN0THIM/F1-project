@@ -392,3 +392,13 @@ Completed 200 OK in 1197ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cac
 Completed 200 OK in 1345ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 31.5ms)
 
 
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-08 23:26:35 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-08 23:26:35 +0000
+Processing by Api::V1::NewsController#index as HTML
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 4140ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 36.4ms)
+
+
+Completed 200 OK in 4149ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 37.5ms)
+
+
