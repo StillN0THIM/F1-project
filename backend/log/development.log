@@ -382,3 +382,13 @@ Completed 200 OK in 2748ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cac
 Completed 200 OK in 2960ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 153.4ms)
 
 
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-08 23:25:36 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-08 23:25:36 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 1197ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 19.9ms)
+
+
+Completed 200 OK in 1345ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 31.5ms)
+
+
