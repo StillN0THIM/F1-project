@@ -40,6 +40,10 @@ gem "httparty"
 gem "feedjira"
 # Parses RSS/Atom feeds — handles the XML so we don't have to
 
+gem "dotenv-rails", groups: [:development, :test]
+# Only loads .env in development and test — in production Railway/Render
+# injects environment variables directly so we don't need the file
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"

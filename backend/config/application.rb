@@ -33,5 +33,8 @@ module Backend
     # Stores the base URL as an app-wide config value
     # accessible anywhere via Rails.application.config.x.jolpica_base_url
 
+    config.x.jolpica_base_url = ENV["JOLPICA_BASE_URL"]
+    # Reads from .env in development, from Railway/Render's env vars in production
+
   end
 end
