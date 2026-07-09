@@ -9,27 +9,40 @@ function News() {
     api.get("/news")
       .then(res => {
         setArticles(res.data);
-        // News comes back as a flat array — no nested MRData like Jolpica
         setLoading(false);
       })
       .catch(err => console.error("Failed to fetch news:", err));
   }, []);
 
-  if (loading) return <div>Loading news...</div>;
+  if (loading) return (
+    <div className="flex items-center justify-center h-64 text-muted">
+      Loading news...
+    </div>
+  );
 
   return (
     <div>
-      <h1>F1 News</h1>
-      {articles.map((article, index) => (
-        <div key={index}>
-          <a href={article.url} target="_blank" rel="noreferrer">
-            <h3>{article.title}</h3>
+      <div className="mb-8">
+        <p className="text-f1red text-sm font-display tracking-widest uppercase mb-1">Latest</p>
+        <h1 className="font-display text-5xl font-bold uppercase tracking-wide">F1 News</h1>
+      </div>
+      <div className="space-y-3">
+        {articles.map((article, index) => (
+          <a key={index} href={article.url} target="_blank" rel="noreferrer" className="flex items-start justify-between gap-6 px-6 py-4 bg-surface rounded hover:bg-white/5 transition-colors group">
+            <div className="flex-1 min-w-0">
+              <span className="text-f1red text-xs font-display tracking-widest uppercase mb-1 block">
+                {article.source}
+              </span>
+              <p className="font-medium text-white group-hover:text-f1red transition-colors leading-snug">
+                {article.title}
+              </p>
+            </div>
+            <p className="text-muted text-xs shrink-0 mt-1">
+              {new Date(article.published).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+            </p>
           </a>
-          {/* target="_blank" opens the article in a new tab */}
-          <p>{article.source} — {new Date(article.published).toLocaleDateString()}</p>
-          {/* Converts the raw date into a readable format like 7/9/2026 */}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

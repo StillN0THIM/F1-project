@@ -1309,3 +1309,516 @@ Completed 200 OK in 1340ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cac
 Completed 200 OK in 1340ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
+Started GET "/api/v1/races/2" for 127.0.0.1 at 2026-07-08 23:49:03 +0000
+Started GET "/api/v1/races/2" for 127.0.0.1 at 2026-07-08 23:49:03 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "2"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "2"}
+Completed 200 OK in 1156ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Completed 200 OK in 1158ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/v1/races/3" for 127.0.0.1 at 2026-07-08 23:49:15 +0000
+Started GET "/api/v1/races/3" for 127.0.0.1 at 2026-07-08 23:49:15 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "3"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "3"}
+Completed 200 OK in 1676ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Completed 200 OK in 1679ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/races/4" for 127.0.0.1 at 2026-07-08 23:49:23 +0000
+Started GET "/api/v1/races/4" for 127.0.0.1 at 2026-07-08 23:49:23 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "4"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "4"}
+Completed 200 OK in 1395ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1396ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/5" for 127.0.0.1 at 2026-07-08 23:49:29 +0000
+Started GET "/api/v1/races/5" for 127.0.0.1 at 2026-07-08 23:49:29 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "5"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "5"}
+Completed 200 OK in 871ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1175ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/6" for 127.0.0.1 at 2026-07-08 23:49:33 +0000
+Started GET "/api/v1/races/6" for 127.0.0.1 at 2026-07-08 23:49:33 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "6"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "6"}
+Completed 200 OK in 1301ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1302ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/7" for 127.0.0.1 at 2026-07-08 23:49:53 +0000
+Started GET "/api/v1/races/7" for 127.0.0.1 at 2026-07-08 23:49:53 +0000
+Processing by Api::V1::RacesController#show as HTML
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "7"}
+  Parameters: {"id" => "7"}
+Completed 200 OK in 518ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 852ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/8" for 127.0.0.1 at 2026-07-08 23:50:19 +0000
+Started GET "/api/v1/races/8" for 127.0.0.1 at 2026-07-08 23:50:19 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "8"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "8"}
+Completed 200 OK in 1186ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1187ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/9" for 127.0.0.1 at 2026-07-08 23:50:27 +0000
+Started GET "/api/v1/races/9" for 127.0.0.1 at 2026-07-08 23:50:27 +0000
+Processing by Api::V1::RacesController#show as HTML
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "9"}
+  Parameters: {"id" => "9"}
+Completed 200 OK in 755ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1231ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/ws" for 127.0.0.1 at 2026-07-09 00:03:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for 127.0.0.1 at 2026-07-09 00:03:22 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/" for 127.0.0.1 at 2026-07-09 00:03:26 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/himanshu/.rbenv/versions/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/himanshu/.rbenv/versions/3.4.1/lib/ruby/gems/3.4.0/gems/railties-8.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 127.0.0.1 at 2026-07-09 00:03:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:04:23 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1842ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:04:25 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1775ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:04:32 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:04:32 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1625ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 2636ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:04:35 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 581ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:04:36 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:04:37 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1023ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Completed 200 OK in 2271ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 32.7ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:04:39 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1551ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:05:16 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:05:16 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 521ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:05:17 +0000
+Processing by Api::V1::NewsController#index as HTML
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:05:17 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1038ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Completed 200 OK in 911ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 21.5ms)
+
+
+Completed 200 OK in 1008ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 21.6ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:05:18 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:05:18 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1921ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1952ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:06:54 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:06:54 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 2230ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.7ms)
+
+
+Completed 200 OK in 2229ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.7ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:06:59 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:06:59 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 557ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Completed 200 OK in 1042ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:07:00 +0000
+Processing by Api::V1::NewsController#index as HTML
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:07:00 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1103ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.7ms)
+
+
+Completed 200 OK in 1113ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.8ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:07:01 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:07:01 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 2196ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 2400ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:07:53 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1545ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:08:29 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:08:29 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 576ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1038ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/9" for 127.0.0.1 at 2026-07-09 00:08:38 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "9"}
+Completed 200 OK in 843ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/9" for 127.0.0.1 at 2026-07-09 00:08:39 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "9"}
+Completed 200 OK in 1012ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:08:40 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:08:40 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 628ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 627ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/2" for 127.0.0.1 at 2026-07-09 00:08:41 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "2"}
+Completed 200 OK in 1353ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/2" for 127.0.0.1 at 2026-07-09 00:08:42 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "2"}
+Completed 200 OK in 515ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:08:45 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:08:45 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 1113ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1117ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:09:10 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:09:10 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1430ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Completed 200 OK in 1727ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:09:13 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:09:13 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 1061ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1067ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/api/v1/races/7" for 127.0.0.1 at 2026-07-09 00:10:53 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "7"}
+Completed 200 OK in 1356ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/api/v1/races/7" for 127.0.0.1 at 2026-07-09 00:10:55 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "7"}
+Completed 200 OK in 586ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:10:55 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:10:55 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 948ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1050ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:13:48 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1590ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.9ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:13:50 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 627ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.4ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:14:46 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:14:46 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:14:47 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1268ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:14:47 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1287ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:14:48 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 1838ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:14:49 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 984ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 2030ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-09 00:14:49 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1170ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 610ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-09 00:14:50 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1022ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:15:32 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:15:32 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:15:32 +0000
+Processing by Api::V1::NewsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 860ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.5ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:15:33 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1899ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.2ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:15:34 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 2016ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.8ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:15:34 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 1481ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.7ms)
+
+
+Completed 200 OK in 520ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Completed 200 OK in 1607ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.8ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:16:11 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:16:11 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1601ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Completed 200 OK in 1931ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:16:13 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:16:13 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:16:14 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1032ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:16:14 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1061ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1351ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.6ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:16:16 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:16:16 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 2293ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.6ms)
+
+
+Completed 200 OK in 1384ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.9ms)
+
+
+Completed 200 OK in 1892ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.9ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:16:19 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:16:19 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:16:19 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 500ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:16:19 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1038ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:16:20 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1474ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:16:21 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 2228ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.6ms)
+
+
+Completed 200 OK in 1294ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.1ms)
+
+
+Completed 200 OK in 994ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:17:07 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-09 00:17:07 +0000
+Processing by Api::V1::NewsController#index as HTML
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1898ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.4ms)
+
+
+Completed 200 OK in 1976ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.5ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:17:10 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-09 00:17:10 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 846ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Completed 200 OK in 945ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:17:11 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-09 00:17:11 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1865ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 2012ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
