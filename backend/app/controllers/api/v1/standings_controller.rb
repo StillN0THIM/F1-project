@@ -1,9 +1,11 @@
 class Api::V1::StandingsController < ApplicationController
     BASE_URL = Rails.application.config.x.jolpica_base_url
+    SEASON = Time.current.year.to_s
+
 
     def index
-    drivers      = HTTParty.get("#{BASE_URL}/2026/driverStandings.json")
-    constructors = HTTParty.get("#{BASE_URL}/2026/constructorStandings.json")
+    drivers      = HTTParty.get("#{BASE_URL}/#{SEASON}/driverStandings.json")
+    constructors = HTTParty.get("#{BASE_URL}/#{SEASON}/constructorStandings.json")
     # Fetches both driver and constructor standings in parallel requests
 
     render json: {

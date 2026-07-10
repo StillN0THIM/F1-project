@@ -36,5 +36,11 @@ module Backend
     config.x.jolpica_base_url = ENV["JOLPICA_BASE_URL"]
     # Reads from .env in development, from Railway/Render's env vars in production
 
+    config.x.frontend_url = ENV["FRONTEND_URL"]
+    #for the backend to communicate to the frontend 
+    
+    config.x.current_season = ENV["CURRENT_SEASON"]
+    #so year isn't hardcoded in the codebase
+  
   end
 end
