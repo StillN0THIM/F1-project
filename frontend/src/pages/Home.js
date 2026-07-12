@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import api from "../utils/api";
+import { useSlowLoading } from "../utils/useApiFetch";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 function Home() {
   const [standings, setStandings] = useState([]);
   const [nextRace, setNextRace] = useState(null);
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const isSlow = useSlowLoading(loading);
 
   useEffect(() => {
     Promise.all([
@@ -27,11 +30,7 @@ function Home() {
     });
   }, []);
 
-  if (loading) return (
-    <div className="flex items-center justify-center h-64 text-muted">
-      Loading...
-    </div>
-  );
+  if (loading) return <LoadingSpinner isSlow={isSlow} />;
 
   return (
     <div className="space-y-10">
