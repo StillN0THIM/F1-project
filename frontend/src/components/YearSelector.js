@@ -20,6 +20,8 @@ function YearSelector({ year, onChange }) {
     // Mirrors displayYear so the native wheel listener always reads the latest value
     // without needing to re-attach the listener on every render
 
+    //CI test
+
     useEffect(() => {
         setDisplayYear(year);
     }, [year]);
