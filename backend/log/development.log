@@ -4521,3 +4521,27 @@ Completed 200 OK in 862ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cach
 Completed 200 OK in 1072ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
 
 
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:28:28 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1721ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:28:30 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1258ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:28:35 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2694ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:28:38 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2310ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+

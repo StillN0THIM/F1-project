@@ -1,4 +1,4 @@
-import { useRef, useCallback, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const CURRENT_SEASON = new Date().getFullYear();
 const MIN_SEASON = 1950;
@@ -54,6 +54,7 @@ function YearSelector({ year, onChange }) {
 
         el.addEventListener("wheel", onWheelNative, { passive: false });
         return () => el.removeEventListener("wheel", onWheelNative);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleMouseDown = (e) => {
