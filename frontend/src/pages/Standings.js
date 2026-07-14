@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react";
 import api from "../utils/api";
+import YearSelector from "../components/YearSelector";
 
 function Standings() {
     const [drivers, setDrivers] = useState([]);
     const [constructors, setConstructors] = useState([]);
     const [loading, setLoading] = useState(true);
     const [tab, setTab] = useState("drivers");
+    const [year, setYear] = useState(new Date().getFullYear());
     // tab controls which table is visible — drivers or constructors
+    // year controls which season's data is fetched
 
     useEffect(() => {
-        api.get("/standings")
+        setLoading(true);
+        api.get(`/standings?year=${year}`)
             .then(res => {
                 const data = res.data;
                 setDrivers(data.drivers.MRData.StandingsTable.StandingsLists[0].DriverStandings);
@@ -17,7 +21,7 @@ function Standings() {
                 setLoading(false);
             })
             .catch(err => console.error("Failed to fetch standings:", err));
-    }, []);
+    }, [year]);
 
     if (loading) return (
         <div className="flex items-center justify-center h-64 text-muted">
@@ -28,9 +32,12 @@ function Standings() {
     return (
         <div>
             {/* Page header */}
-            <div className="mb-8">
-                <p className="text-f1red text-sm font-display tracking-widest uppercase mb-1">2025 Season</p>
-                <h1 className="font-display text-5xl font-bold uppercase tracking-wide">Standings</h1>
+            <div className="mb-8 flex items-center justify-between">
+                <div>
+                    <p className="text-f1red text-sm font-display tracking-widest uppercase mb-1">{year} Season</p>
+                    <h1 className="font-display text-5xl font-bold uppercase tracking-wide">Standings</h1>
+                </div>
+                <YearSelector year={year} onChange={setYear} />
             </div>
 
             {/* Tab switcher */}

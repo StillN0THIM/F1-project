@@ -4058,3 +4058,466 @@ Completed 200 OK in 2233ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cac
 Completed 200 OK in 2400ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-14 23:02:23 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-14 23:02:23 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-14 23:02:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/standings"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/calendar"):
+  
+Processing by Api::V1::NewsController#index as HTML
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-14 23:02:23 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-14 23:02:23 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 906ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-14 23:02:24 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1226ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 13.6ms)
+
+
+Completed 200 OK in 2177ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.1ms)
+
+
+Completed 200 OK in 2465ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 23.5ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:02:27 +0000
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:02:27 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2037ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Completed 200 OK in 2251ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/api/v1/standings?year=1977" for 127.0.0.1 at 2026-07-14 23:02:32 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "1977"}
+Completed 200 OK in 2389ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/v1/standings?year=2019" for 127.0.0.1 at 2026-07-14 23:02:42 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2019"}
+Completed 200 OK in 2495ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/api/v1/standings?year=2021" for 127.0.0.1 at 2026-07-14 23:02:58 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2021"}
+Completed 200 OK in 1814ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2020" for 127.0.0.1 at 2026-07-14 23:04:28 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2020"}
+Completed 200 OK in 2591ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2019" for 127.0.0.1 at 2026-07-14 23:06:14 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2019"}
+Started GET "/api/v1/standings?year=2018" for 127.0.0.1 at 2026-07-14 23:06:15 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2018"}
+Completed 200 OK in 2090ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Completed 200 OK in 2270ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/v1/standings?year=2017" for 127.0.0.1 at 2026-07-14 23:06:19 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2017"}
+Started GET "/api/v1/standings?year=2016" for 127.0.0.1 at 2026-07-14 23:06:19 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2016"}
+Started GET "/api/v1/standings?year=2015" for 127.0.0.1 at 2026-07-14 23:06:19 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2015"}
+Completed 200 OK in 2578ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Completed 200 OK in 2511ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Completed 200 OK in 2425ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/v1/standings?year=2014" for 127.0.0.1 at 2026-07-14 23:06:23 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2014"}
+Completed 200 OK in 2189ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2013" for 127.0.0.1 at 2026-07-14 23:06:29 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2013"}
+Started GET "/api/v1/standings?year=2014" for 127.0.0.1 at 2026-07-14 23:06:31 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2014"}
+Started GET "/api/v1/standings?year=2015" for 127.0.0.1 at 2026-07-14 23:06:31 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2015"}
+Completed 200 OK in 2774ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2016" for 127.0.0.1 at 2026-07-14 23:06:32 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2016"}
+Completed 200 OK in 1589ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2017" for 127.0.0.1 at 2026-07-14 23:06:33 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2017"}
+Completed 200 OK in 1909ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1537ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2016" for 127.0.0.1 at 2026-07-14 23:06:33 +0000
+Started GET "/api/v1/standings?year=2015" for 127.0.0.1 at 2026-07-14 23:06:33 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2016"}
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2015"}
+Completed 200 OK in 1647ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2016" for 127.0.0.1 at 2026-07-14 23:06:34 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2016"}
+Completed 200 OK in 1670ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2017" for 127.0.0.1 at 2026-07-14 23:06:35 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2017"}
+Completed 200 OK in 2167ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.3ms)
+
+
+Started GET "/api/v1/standings?year=2018" for 127.0.0.1 at 2026-07-14 23:06:35 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2018"}
+Completed 200 OK in 2029ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.7ms)
+
+
+Started GET "/api/v1/standings?year=2019" for 127.0.0.1 at 2026-07-14 23:06:36 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2019"}
+Completed 200 OK in 1513ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.3ms)
+
+
+Started GET "/api/v1/standings?year=2020" for 127.0.0.1 at 2026-07-14 23:06:36 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2020"}
+Completed 200 OK in 1052ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Completed 200 OK in 1663ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Completed 200 OK in 1877ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:08:28 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2655ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:08:31 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2618ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/api/v1/standings?year=2023" for 127.0.0.1 at 2026-07-14 23:08:41 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2023"}
+Completed 200 OK in 1810ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:08:45 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2113ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/v1/standings?year=2023" for 127.0.0.1 at 2026-07-14 23:08:48 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2023"}
+Completed 200 OK in 2065ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2021" for 127.0.0.1 at 2026-07-14 23:08:53 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2021"}
+Completed 200 OK in 2377ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:08:58 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2214ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/v1/standings?year=2023" for 127.0.0.1 at 2026-07-14 23:10:39 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2023"}
+Started GET "/api/v1/standings?year=2025" for 127.0.0.1 at 2026-07-14 23:10:40 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 2735ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Completed 200 OK in 2212ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:11:52 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1660ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2021" for 127.0.0.1 at 2026-07-14 23:12:07 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2021"}
+Completed 200 OK in 2454ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:12:11 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2348ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2025" for 127.0.0.1 at 2026-07-14 23:13:24 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 2422ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:17:24 +0000
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:17:24 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2390ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 2390ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2025" for 127.0.0.1 at 2026-07-14 23:18:03 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 2387ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:18:31 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:18:31 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1156ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1169ms (Views: 7.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.5ms)
+
+
+Started GET "/api/v1/calendar?year=2025" for 127.0.0.1 at 2026-07-14 23:18:35 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 1475ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-14 23:18:38 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-14 23:18:38 +0000
+Processing by Api::V1::RacesController#show as HTML
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+  Parameters: {"id" => "1"}
+Completed 200 OK in 723ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Completed 200 OK in 1145ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:18:47 +0000
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:18:47 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1311ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1316ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-14 23:19:28 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 631ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-14 23:19:28 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1391ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:19:35 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1576ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:19:36 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1365ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2025" for 127.0.0.1 at 2026-07-14 23:19:39 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 1272ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-14 23:19:46 +0000
+Started GET "/api/v1/races/1" for 127.0.0.1 at 2026-07-14 23:19:46 +0000
+Processing by Api::V1::RacesController#show as HTML
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"id" => "1"}
+  Parameters: {"id" => "1"}
+Completed 200 OK in 1421ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Completed 200 OK in 1423ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:19:50 +0000
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:19:50 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:19:51 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 800ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1006ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 2428ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-14 23:19:53 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2313ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/api/v1/standings?year=2025" for 127.0.0.1 at 2026-07-14 23:20:02 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 1441ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:20:10 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 1248ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:20:11 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 815ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2025" for 127.0.0.1 at 2026-07-14 23:20:12 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 1334ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/1?year=2025" for 127.0.0.1 at 2026-07-14 23:20:27 +0000
+Started GET "/api/v1/races/1?year=2025" for 127.0.0.1 at 2026-07-14 23:20:27 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"year" => "2025", "id" => "1"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"year" => "2025", "id" => "1"}
+Completed 200 OK in 893ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 896ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:20:35 +0000
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:20:35 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 858ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1178ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2025" for 127.0.0.1 at 2026-07-14 23:20:40 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 1024ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2024" for 127.0.0.1 at 2026-07-14 23:20:42 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2024"}
+Completed 200 OK in 963ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/4?year=2024" for 127.0.0.1 at 2026-07-14 23:20:46 +0000
+Started GET "/api/v1/races/4?year=2024" for 127.0.0.1 at 2026-07-14 23:20:46 +0000
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"year" => "2024", "id" => "4"}
+Processing by Api::V1::RacesController#show as HTML
+  Parameters: {"year" => "2024", "id" => "4"}
+Completed 200 OK in 1275ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1275ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:20:52 +0000
+Started GET "/api/v1/calendar?year=2026" for 127.0.0.1 at 2026-07-14 23:20:52 +0000
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Processing by Api::V1::CalendarController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 862ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Completed 200 OK in 1072ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.3ms)
+
+

@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import api from "../utils/api";
+import YearSelector from "../components/YearSelector";
 
 function Calendar() {
     const [races, setRaces] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [year, setYear] = useState(new Date().getFullYear());
 
     useEffect(() => {
-        api.get("/calendar")
+        setLoading(true);
+        api.get(`/calendar?year=${year}`)
             .then(res => {
                 setRaces(res.data.MRData.RaceTable.Races);
                 setLoading(false);
             })
             .catch(err => console.error("Failed to fetch calendar:", err));
-    }, []);
+    }, [year]);
 
     if (loading) return (
         <div className="flex items-center justify-center h-64 text-muted">
@@ -22,26 +25,31 @@ function Calendar() {
     );
 
     const today = new Date();
-    // Used to determine if a race is past, upcoming, or next
+    const isCurrentSeason = year === today.getFullYear();
+    // Only the current season has a meaningful "next race" — past seasons are all history
 
     return (
         <div>
             {/* Page header */}
-            <div className="mb-8">
-                <p className="text-f1red text-sm font-display tracking-widest uppercase mb-1">2025 Season</p>
-                <h1 className="font-display text-5xl font-bold uppercase tracking-wide">Race Calendar</h1>
+            <div className="mb-8 flex items-center justify-between">
+                <div>
+                    <p className="text-f1red text-sm font-display tracking-widest uppercase mb-1">{year} Season</p>
+                    <h1 className="font-display text-5xl font-bold uppercase tracking-wide">Race Calendar</h1>
+                </div>
+                <YearSelector year={year} onChange={setYear} />
             </div>
 
             <div className="space-y-2">
                 {races.map(race => {
                     const raceDate = new Date(race.date);
-                    const isPast = raceDate < today;
-                    const isNext = !isPast && races.find(r => new Date(r.date) >= today)?.round === race.round;
-                    // isNext flags the very next upcoming race
+                    const isPast = isCurrentSeason ? raceDate < today : true;
+                    // In past seasons every race is "past" — in the current season it depends on today's date
+                    const isNext = isCurrentSeason && !isPast &&
+                        races.find(r => new Date(r.date) >= today)?.round === race.round;
 
                     return (
                         <Link
-                            to={isPast ? `/races/${race.round}` : "#"}
+                            to={isPast ? `/races/${race.round}?year=${year}` : "#"}
                             key={race.round}
                             className={`flex items-center gap-4 px-6 py-4 bg-surface rounded 
                 transition-colors group

@@ -1,15 +1,20 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useSearchParams, Link } from "react-router-dom";
 import api from "../utils/api";
 
 function Race() {
   const { id } = useParams();
+  const [searchParams] = useSearchParams();
+  const year = searchParams.get("year") || new Date().getFullYear();
+  // Reads ?year=1996 from the URL, falls back to current season if not present
+
   const [results, setResults] = useState([]);
   const [raceInfo, setRaceInfo] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api.get(`/races/${id}`)
+    setLoading(true);
+    api.get(`/races/${id}?year=${year}`)
       .then(res => {
         const race = res.data.MRData.RaceTable.Races[0];
         setRaceInfo(race);
@@ -17,7 +22,7 @@ function Race() {
         setLoading(false);
       })
       .catch(err => console.error("Failed to fetch race:", err));
-  }, [id]);
+  }, [id, year]);
 
   if (loading) return (
     <div className="flex items-center justify-center h-64 text-muted">
@@ -27,7 +32,7 @@ function Race() {
 
   return (
     <div>
-      <Link to="/calendar" className="text-muted text-sm hover:text-white transition-colors mb-6 inline-block">
+      <Link to={`/calendar`} className="text-muted text-sm hover:text-white transition-colors mb-6 inline-block">
         ← Back to Calendar
       </Link>
       <div className="mb-8">
@@ -65,4 +70,4 @@ function Race() {
   );
 }
 
-export default Race;
+export default Race;  
