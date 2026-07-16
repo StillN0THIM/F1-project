@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :standings, only: [:index]
       resources :calendar,  only: [:index]
       resources :news,      only: [:index]
+      get "races/:year/:round/tracking", to: "tracking#show"
     end
   end  
   

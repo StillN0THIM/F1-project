@@ -36,6 +36,10 @@ module Backend
     config.x.jolpica_base_url = ENV["JOLPICA_BASE_URL"]
     # Reads from .env in development, from Railway/Render's env vars in production
 
+    config.x.openf1_base_url = "https://api.openf1.org/v1"
+
+    config.x.openf1_base_url = ENV["OPENF1_BASE_URL"] if ENV["OPENF1_BASE_URL"].present?
+
     config.x.frontend_url = ENV["FRONTEND_URL"]
     #for the backend to communicate to the frontend 
     

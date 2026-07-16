@@ -4545,3 +4545,121 @@ Processing by Api::V1::StandingsController#index as HTML
 Completed 200 OK in 2310ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-15 03:41:55 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 2379ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.2ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-15 03:41:57 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Started GET "/api/v1/standings?year=2025" for 127.0.0.1 at 2026-07-15 03:41:59 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 2190ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.4ms)
+
+
+Completed 200 OK in 2359ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2024" for 127.0.0.1 at 2026-07-15 03:42:02 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2024"}
+Completed 200 OK in 2896ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2025" for 127.0.0.1 at 2026-07-15 03:42:08 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2025"}
+Completed 200 OK in 2274ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:01:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/races/2026/1/tracking"):
+  
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:02:39 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/races/2026/1/tracking"):
+  
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:03:36 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/races/2026/1/tracking"):
+  
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:05:25 +0000
+  
+NameError (uninitialized constant ApplicatonController):
+  
+app/controllers/api/v1/tracking_controller.rb:1:in '<compiled>'
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:06:34 +0000
+  
+NoMethodError (undefined method 'aplication' for module Rails):
+  
+app/controllers/api/v1/tracking_controller.rb:3:in '<class:TrackingController>'
+app/controllers/api/v1/tracking_controller.rb:1:in '<compiled>'
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:07:41 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+NameError (undefined local variable or method 'round' for an instance of Api::V1::TrackingController):
+  
+app/controllers/api/v1/tracking_controller.rb:9:in 'Api::V1::TrackingController#show'
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:08:20 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method 'fetch_race_data' for an instance of Api::V1::TrackingController):
+  
+app/controllers/api/v1/tracking_controller.rb:11:in 'Api::V1::TrackingController#show'
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:08:55 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 500 Internal Server Error in 1889ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+URI::InvalidURIError (bad URI (is not URI?): "{}/sessions"):
+  
+app/controllers/api/v1/tracking_controller.rb:40:in 'Api::V1::TrackingController#fetch_session_for_date'
+app/controllers/api/v1/tracking_controller.rb:14:in 'Api::V1::TrackingController#show'
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:10:32 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 500 Internal Server Error in 1519ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+URI::InvalidURIError (bad URI (is not URI?): "{}/sessions"):
+  
+app/controllers/api/v1/tracking_controller.rb:40:in 'Api::V1::TrackingController#fetch_session_for_date'
+app/controllers/api/v1/tracking_controller.rb:14:in 'Api::V1::TrackingController#show'
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:12:12 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 500 Internal Server Error in 1278ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+URI::InvalidURIError (bad URI (is not URI?): "{}/sessions"):
+  
+app/controllers/api/v1/tracking_controller.rb:40:in 'Api::V1::TrackingController#fetch_session_for_date'
+app/controllers/api/v1/tracking_controller.rb:14:in 'Api::V1::TrackingController#show'
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-15 05:12:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 200 OK in 9041ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
