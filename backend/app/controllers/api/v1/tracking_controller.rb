@@ -16,7 +16,7 @@ class Api::V1::TrackingController < ApplicationController
 
     session_key = session["session_key"]
     drivers = fetch_drivers(session_key)
-    location_data = fetch_location(session_key)
+    location_data = fetch_location(session_key, session["date_start"], session["date_end"])
     tracking = downsample_and_group(location_data)
 
     render json: {
@@ -51,9 +51,26 @@ class Api::V1::TrackingController < ApplicationController
   end
 
   # Raw x/y/z location data for every car in the session
-  def fetch_location(session_key)
-    response = HTTParty.get("#{OPENF1_BASE}/location", query: { session_key: session_key })
-    response.parsed_response
+  def fetch_location(session_key, session_start, session_end)
+    all_points = []
+    window_seconds = 400
+    current_start = Time.parse(session_start)
+    final_end = Time.parse(session_end)
+
+    while current_start < final_end
+      current_end = [current_start + window_seconds, final_end].min
+
+      response = HTTParty.get("#{OPENF1_BASE}/location", query: {
+        session_key: session_key,
+        "date>" => current_start.iso8601,
+        "date<" => current_end.iso8601
+      })
+
+      all_points.concat(response.parsed_response) if response.parsed_response.is_a?(Array)
+      current_start = current_end
+    end
+
+    all_points
   end
 
   # Groups raw points by driver, then keeps only ~1 point/sec to cut payload size

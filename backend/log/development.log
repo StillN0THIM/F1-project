@@ -4663,3 +4663,276 @@ Processing by Api::V1::TrackingController#show as */*
 Completed 200 OK in 9041ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:05:48 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:05:48 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:05:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/standings"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/calendar"):
+  
+Processing by Api::V1::StandingsController#index as HTML
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:05:48 +0000
+Processing by Api::V1::NewsController#index as HTML
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:05:48 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 706ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
+
+
+Completed 200 OK in 1018ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 37.6ms)
+
+
+Completed 200 OK in 2042ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 13.0ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:05:50 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 849ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:06:13 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:06:13 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:06:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/calendar"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/calendar"):
+  
+Processing by Api::V1::StandingsController#index as HTML
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:06:13 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 646ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:06:14 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1051ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 17.4ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:06:14 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 587ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.7ms)
+
+
+Completed 200 OK in 993ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 5.2ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:06:56 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:06:56 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:06:56 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 322ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.4ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:06:56 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 687ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 17.2ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:06:57 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 836ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 22.6ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:06:57 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 621ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.5ms)
+
+
+Completed 200 OK in 269ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Completed 200 OK in 559ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.8ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-17 04:06:59 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 615ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-17 04:07:00 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 808ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2024" for 127.0.0.1 at 2026-07-17 04:07:02 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2024"}
+Completed 200 OK in 1112ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.9ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-17 04:07:06 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 672ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:09:24 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:09:24 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:09:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/calendar"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/standings"):
+  
+Processing by Api::V1::NewsController#index as HTML
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:09:24 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:09:24 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 644ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:09:25 +0000
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 1133ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.9ms)
+
+
+Completed 200 OK in 1077ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.8ms)
+
+
+Completed 200 OK in 935ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 23.3ms)
+
+
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-17 04:09:38 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 200 OK in 8168ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:18:07 +0000
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:18:07 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 04:18:07 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 532ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 04:18:08 +0000
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 791ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Completed 200 OK in 793ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Completed 200 OK in 261ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:18:08 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 04:18:08 +0000
+Processing by Api::V1::NewsController#index as HTML
+Processing by Api::V1::NewsController#index as HTML
+Completed 200 OK in 893ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.6ms)
+
+
+Completed 200 OK in 939ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 21.3ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-17 09:23:44 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 200 OK in 11072ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-17 09:26:14 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 200 OK in 12185ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.7ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-17 09:28:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 200 OK in 13698ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-17 09:29:23 +0000
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Completed   in 54519ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.4ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 09:47:01 +0000
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 09:47:01 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 09:47:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/news"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/calendar"):
+  
+Processing by Api::V1::StandingsController#index as HTML
+Started GET "/api/v1/calendar" for 127.0.0.1 at 2026-07-17 09:47:02 +0000
+Started GET "/api/v1/news" for 127.0.0.1 at 2026-07-17 09:47:02 +0000
+Processing by Api::V1::NewsController#index as HTML
+Processing by Api::V1::CalendarController#index as HTML
+Completed 200 OK in 572ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Completed 200 OK in 847ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/api/v1/standings" for 127.0.0.1 at 2026-07-17 09:47:03 +0000
+Processing by Api::V1::StandingsController#index as HTML
+Completed 200 OK in 1160ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.1ms)
+
+
+Completed 200 OK in 487ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.6ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-17 09:47:06 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 440ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/standings?year=2026" for 127.0.0.1 at 2026-07-17 09:47:06 +0000
+Processing by Api::V1::StandingsController#index as HTML
+  Parameters: {"year" => "2026"}
+Completed 200 OK in 433ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJOLPICA_BASE_URL[0m, [36mFRONTEND_URL[0m, [36mCURRENT_SEASON[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/v1/races/2026/1/tracking" for ::1 at 2026-07-17 09:49:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Backend'*/[0m
+Processing by Api::V1::TrackingController#show as */*
+  Parameters: {"year" => "2026", "round" => "1"}
+Completed 200 OK in 42920ms (Views: 28.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1007.0ms)
+
+
