@@ -37,7 +37,7 @@ class Api::V1::TrackingController < ApplicationController
 
   # OpenF1 sessions don't use round numbers — match by year + date instead
   def fetch_session_for_date(year, race_date)
-    response = HTTParty.get("#{OPENF1_BASE}/sessions", query: { year: year, session_type: "Race" })
+    response = HTTParty.get("#{OPENF1_BASE}/sessions", query: { year: year, session_type: "Race" }, timeout: 10)
     sessions = response.parsed_response
     return nil unless sessions.is_a?(Array)
 
@@ -46,31 +46,36 @@ class Api::V1::TrackingController < ApplicationController
 
   # Driver info (names, team colors, numbers) for the legend
   def fetch_drivers(session_key)
-    response = HTTParty.get("#{OPENF1_BASE}/drivers", query: { session_key: session_key })
+    response = HTTParty.get("#{OPENF1_BASE}/drivers", query: { session_key: session_key }, timeout: 10)
     response.parsed_response
   end
 
   # Raw x/y/z location data for every car in the session
   def fetch_location(session_key, session_start, session_end)
-    all_points = []
     window_seconds = 400
     current_start = Time.parse(session_start)
     final_end = Time.parse(session_end)
 
+    windows = []
     while current_start < final_end
       current_end = [current_start + window_seconds, final_end].min
-
-      response = HTTParty.get("#{OPENF1_BASE}/location", query: {
-        session_key: session_key,
-        "date>" => current_start.iso8601,
-        "date<" => current_end.iso8601
-      })
-
-      all_points.concat(response.parsed_response) if response.parsed_response.is_a?(Array)
+      windows << [current_start, current_end]
       current_start = current_end
     end
 
-    all_points
+    # Fire all chunk requests concurrently instead of one after another
+    threads = windows.map do |(w_start, w_end)|
+      Thread.new do
+        response = HTTParty.get("#{OPENF1_BASE}/location", query: {
+          session_key: session_key,
+          "date>" => w_start.iso8601,
+          "date<" => w_end.iso8601
+        }, timeout: 10)
+        response.parsed_response.is_a?(Array) ? response.parsed_response : []
+      end
+    end
+
+    threads.flat_map(&:value)
   end
 
   # Groups raw points by driver, then keeps only ~1 point/sec to cut payload size

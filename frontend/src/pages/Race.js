@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, useSearchParams, Link } from "react-router-dom";
 import api from "../utils/api";
+import CircuitMap from "../components/CircuitMap";
+
 
 function Race() {
   const { id } = useParams();
@@ -40,6 +42,7 @@ function Race() {
         <h1 className="font-display text-5xl font-bold uppercase tracking-wide">{raceInfo.raceName}</h1>
         <p className="text-muted mt-1">{raceInfo.Circuit.circuitName} — {raceInfo.Circuit.Location.locality}, {raceInfo.Circuit.Location.country}</p>
       </div>
+      <CircuitMap year={year} round={id} />
       <div className="bg-surface rounded overflow-hidden">
         <table className="w-full text-sm">
           <thead>
