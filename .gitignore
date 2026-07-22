@@ -9,12 +9,13 @@ backend/public/assets
 backend/public/packs
 backend/.bundle
 backend/vendor/bundle
+backend/log/development.log
 
 # Keep these folders but ignore their contents
 !backend/log/.keep
 !backend/tmp/.keep
 !backend/storage/.keep
-!backend/log/development.log
+
 
 # ── React / Node ───────────────────────────────────────────────
 frontend/node_modules/
