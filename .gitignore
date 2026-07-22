@@ -14,7 +14,7 @@ backend/vendor/bundle
 !backend/log/.keep
 !backend/tmp/.keep
 !backend/storage/.keep
-!backend/log/
+!backend/log/development.log
 
 # ── React / Node ───────────────────────────────────────────────
 frontend/node_modules/
