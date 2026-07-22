@@ -9,7 +9,7 @@ backend/public/assets
 backend/public/packs
 backend/.bundle
 backend/vendor/bundle
-backend/log/development.log
+backend/log
 
 # Keep these folders but ignore their contents
 !backend/log/.keep
